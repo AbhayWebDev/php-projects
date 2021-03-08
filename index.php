@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="bg-info">
+<body class="cus-bg">
     <div class="container">
         <!-- Login Form Start -->
         <div class="row justify-content-center wrapper" id="login-box">
