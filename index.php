@@ -1,67 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management System</title>
+    <!-- Bootstrap 4 CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Fontawesome CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-    
+
+<body class="bg-info">
     <div class="container">
-        <div class="row jsutify-content-center wrapper" id="login-box">
-            <div class="col-lg-10 my-auto">
-                <div class="card-group">
-                    <div class="card rounded p-4">
-                        <h1 class="text-center text-primary">Sign In</h1>
-                        <hr class="my-3">
+        <!-- Login Form Start -->
+        <div class="row justify-content-center wrapper" id="login-box">
+            <div class="col-lg-10 my-auto myShadow">
+                <div class="row">
+                    <div class="col-lg-7 bg-white p-4">
+                        <h1 class="text-center font-weight-bold text-primary">Sign in to Account</h1>
+                        <hr class="my-3" />
                         <form action="#" method="post" class="px-3" id="login-form">
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text rounded-0">
-                                        <i class="far fa-envelope fa-lg"></i>
-                                    </span>
+                                    <span class="input-group-text rounded-0"><i class="far fa-envelope fa-lg fa-fw"></i></span>
                                 </div>
-                                <input type="email" name="email" id="email" class="form-control rounded-0" placeholder="Enter email..." required>
+                                <input type="email" id="email" name="email" class="form-control rounded-0" placeholder="E-Mail" required />
                             </div>
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text rounded-0">
-                                        <i class="fas fa-key fa-lg"></i>
-                                    </span>
+                                    <span class="input-group-text rounded-0"><i class="fas fa-key fa-lg fa-fw"></i></span>
                                 </div>
-                                <input type="password" name="password" id="password" class="form-control rounded-0" placeholder="Enter password..." required>
+                                <input type="password" id="password" name="password" class="form-control rounded-0" minlength="5" placeholder="Password" required autocomplete="off" />
                             </div>
-                            <div class="form-group">
+                            <div class="form-group clearfix">
                                 <div class="custom-control custom-checkbox float-left">
-                                    <input type="checkbox" name="rem" id="customCheck" class="custom-control-input">
-                                    <label for="customCheck" class="custom-control-label">Remember Me</label>
+                                    <input type="checkbox" class="custom-control-input" id="customCheck" name="rem" />
+                                    <label class="custom-control-label" for="customCheck">Remember me</label>
                                 </div>
                                 <div class="forgot float-right">
                                     <a href="#" id="forgot-link">Forgot Password?</a>
                                 </div>
-                                <div class="clearfix"></div>
                             </div>
                             <div class="form-group">
-                                <input type="submit" value="Sign In" id="login-btn" class="btn btn-primary btn-lg btn-block">
+                                <input type="submit" id="login-btn" value="Sign In" class="btn btn-primary btn-lg btn-block myBtn" />
                             </div>
                         </form>
-                    </div> <!--Left Card-->
-
-                    <div class="card justify-content-center rounded-right cardColor p-4">
-                        <h1 class="text-center">Hello User</h1>
-                        <hr class="my-3 bg-light">
+                    </div>
+                    <div class="col-lg-5 d-flex flex-column justify-content-center myColor p-4">
+                        <h1 class="text-center font-weight-bold text-white">Hello Friends!</h1>
+                        <hr class="my-3 bg-light myHr" />
+                        <p class="text-center font-weight-bolder text-light lead">Enter your personal details and start your journey with us!</p>
+                        <button class="btn btn-outline-light btn-lg align-self-center font-weight-bolder mt-4 myLinkBtn" id="register-link">Sign Up</button>
                     </div>
                 </div>
             </div>
-        </div> <!--End Login Box-->
+        </div>
+        <!-- Login Form End -->
+        <!-- Registration Form Start -->
+        <div class="row justify-content-center wrapper" id="register-box" style="display: none;">
+            <div class="col-lg-10 my-auto myShadow">
+                <div class="row">
+                    <div class="col-lg-5 d-flex flex-column justify-content-center myColor p-4">
+                        <h1 class="text-center font-weight-bold text-white">Welcome Back!</h1>
+                        <hr class="my-4 bg-light myHr" />
+                        <p class="text-center font-weight-bolder text-light lead">To keep connected with us please login with your personal info.</p>
+                        <button class="btn btn-outline-light btn-lg font-weight-bolder mt-4 align-self-center myLinkBtn" id="login-link">Sign In</button>
+                    </div>
+                    <div class="col-lg-7 bg-white p-4">
+                        <h1 class="text-center font-weight-bold text-primary">Create Account</h1>
+                        <hr class="my-3" />
+                        <form action="#" method="post" class="px-3" id="register-form">
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text rounded-0"><i class="far fa-user fa-lg fa-fw"></i></span>
+                                </div>
+                                <input type="text" id="name" name="name" class="form-control rounded-0" placeholder="Full Name" required />
+                            </div>
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text rounded-0"><i class="far fa-envelope fa-lg fa-fw"></i></span>
+                                </div>
+                                <input type="email" id="remail" name="email" class="form-control rounded-0" placeholder="E-Mail" required />
+                            </div>
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text rounded-0"><i class="fas fa-key fa-lg fa-fw"></i></span>
+                                </div>
+                                <input type="password" id="rpassword" name="password" class="form-control rounded-0" minlength="5" placeholder="Password" required />
+                            </div>
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text rounded-0"><i class="fas fa-key fa-lg fa-fw"></i></span>
+                                </div>
+                                <input type="password" id="cpassword" name="cpassword" class="form-control rounded-0" minlength="5" placeholder="Confirm Password" required />
+                            </div>
+                            <div class="form-group">
+                                <div id="passError" class="text-danger font-weight-bolder"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" id="register-btn" value="Sign Up" class="btn btn-primary btn-lg btn-block myBtn" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Registration Form End -->
+        <!-- Forgot Password Form Start -->
+        <div class="row justify-content-center wrapper" id="forgot-box" style="display: none;">
+            <div class="col-lg-10 my-auto myShadow">
+                <div class="row">
+                    <div class="col-lg-7 bg-white p-4">
+                        <h1 class="text-center font-weight-bold text-primary">Forgot Your Password?</h1>
+                        <hr class="my-3" />
+                        <p class="lead text-center text-secondary">To reset your password, enter the registered e-mail adddress and we will send you password reset instructions on your e-mail!</p>
+                        <form action="#" method="post" class="px-3" id="forgot-form">
+                            <div id="forgotAlert"></div>
+                            <div class="input-group input-group-lg form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text rounded-0"><i class="far fa-envelope fa-lg"></i></span>
+                                </div>
+                                <input type="email" id="femail" name="email" class="form-control rounded-0" placeholder="E-Mail" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" id="forgot-btn" value="Reset Password" class="btn btn-primary btn-lg btn-block myBtn" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 d-flex flex-column justify-content-center myColor p-4">
+                        <h1 class="text-center font-weight-bold text-white">Reset Password!</h1>
+                        <hr class="my-4 bg-light myHr" />
+                        <button class="btn btn-outline-light btn-lg font-weight-bolder myLinkBtn align-self-center" id="back-link">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Forgot Password Form End -->
     </div>
 
-<!-- JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" crossorigin="anonymous"></script>
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
