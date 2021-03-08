@@ -25,13 +25,13 @@
                         <form action="#" method="post" class="px-3" id="login-form">
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text rounded-0"><i class="far fa-envelope fa-lg fa-fw"></i></span>
+                                    <span class="input-group-text rounded-0"><i class="far fa-envelope fa-sm fa-fw"></i></span>
                                 </div>
                                 <input type="email" id="email" name="email" class="form-control rounded-0" placeholder="E-Mail" required />
                             </div>
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text rounded-0"><i class="fas fa-key fa-lg fa-fw"></i></span>
+                                    <span class="input-group-text rounded-0"><i class="fas fa-key fa-sm fa-fw"></i></span>
                                 </div>
                                 <input type="password" id="password" name="password" class="form-control rounded-0" minlength="5" placeholder="Password" required autocomplete="off" />
                             </div>
@@ -81,19 +81,19 @@
                             </div>
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text rounded-0"><i class="far fa-envelope fa-lg fa-fw"></i></span>
+                                    <span class="input-group-text rounded-0"><i class="far fa-envelope fa-sm fa-fw"></i></span>
                                 </div>
                                 <input type="email" id="remail" name="email" class="form-control rounded-0" placeholder="E-Mail" required />
                             </div>
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text rounded-0"><i class="fas fa-key fa-lg fa-fw"></i></span>
+                                    <span class="input-group-text rounded-0"><i class="fas fa-key fa-sm fa-fw"></i></span>
                                 </div>
                                 <input type="password" id="rpassword" name="password" class="form-control rounded-0" minlength="5" placeholder="Password" required />
                             </div>
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text rounded-0"><i class="fas fa-key fa-lg fa-fw"></i></span>
+                                    <span class="input-group-text rounded-0"><i class="fas fa-key fa-sm fa-fw"></i></span>
                                 </div>
                                 <input type="password" id="cpassword" name="cpassword" class="form-control rounded-0" minlength="5" placeholder="Confirm Password" required />
                             </div>
@@ -121,7 +121,7 @@
                             <div id="forgotAlert"></div>
                             <div class="input-group input-group-lg form-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text rounded-0"><i class="far fa-envelope fa-lg"></i></span>
+                                    <span class="input-group-text rounded-0"><i class="far fa-envelope fa-sm"></i></span>
                                 </div>
                                 <input type="email" id="femail" name="email" class="form-control rounded-0" placeholder="E-Mail" required />
                             </div>
