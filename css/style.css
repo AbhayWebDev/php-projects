@@ -38,9 +38,7 @@
 }
 
 .cus-btn:hover {
-    linear-gradient(to right,
-    #859398 0%,
-    #283048 100%)
+    background: linear-gradient(to right, #859398 0%, #283048 100%)
 }
 
 .myHr {
