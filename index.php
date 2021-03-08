@@ -20,7 +20,7 @@
             <div class="col-lg-10 my-auto myShadow">
                 <div class="row">
                     <div class="col-lg-7 bg-white p-4">
-                        <h1 class="text-center font-weight-bold text-primary">Sign in to Account</h1>
+                        <h1 class="text-center font-weight-bold text-secondary">Sign in to Account</h1>
                         <hr class="my-3" />
                         <form action="#" method="post" class="px-3" id="login-form">
                             <div class="input-group input-group-lg form-group">
@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="submit" id="login-btn" value="Sign In" class="btn btn-primary btn-lg btn-block myBtn" />
+                                <input type="submit" id="login-btn" value="Sign In" class="btn btn-primary btn-lg btn-block cus-btn" />
                             </div>
                         </form>
                     </div>
@@ -101,7 +101,7 @@
                                 <div id="passError" class="text-danger font-weight-bolder"></div>
                             </div>
                             <div class="form-group">
-                                <input type="submit" id="register-btn" value="Sign Up" class="btn btn-primary btn-lg btn-block myBtn" />
+                                <input type="submit" id="register-btn" value="Sign Up" class="btn btn-primary btn-lg btn-block cus-btn" />
                             </div>
                         </form>
                     </div>
@@ -126,7 +126,7 @@
                                 <input type="email" id="femail" name="email" class="form-control rounded-0" placeholder="E-Mail" required />
                             </div>
                             <div class="form-group">
-                                <input type="submit" id="forgot-btn" value="Reset Password" class="btn btn-primary btn-lg btn-block myBtn" />
+                                <input type="submit" id="forgot-btn" value="Reset Password" class="btn btn-primary btn-lg btn-block cus-btn" />
                             </div>
                         </form>
                     </div>
