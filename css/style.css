@@ -11,7 +11,10 @@
 }
 
 .myColor {
-    background-image: linear-gradient(to right, #f83600 50%, #f9d423 150%);
+    /* background-image: linear-gradient(to right, #f83600 50%, #f9d423 150%); */
+    background: #283048;
+    background: -webkit-linear-gradient(to right, #859398, #283048);
+    background: linear-gradient(to right, #859398, #283048);
 }
 
 .myShadow {
